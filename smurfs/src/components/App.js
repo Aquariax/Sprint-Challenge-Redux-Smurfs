@@ -24,7 +24,7 @@ class App extends Component {
       <div className="App">
         <h1>SMURFS!</h1>
         <SmurfForm />
-        <Smurf delete={this.removeSmurf} smurf={this.props.smurfs}/>
+        <Smurf delete={this.removeSmurf} smurf={this.props.smurf}/>
       </div>
     );
   }
@@ -32,7 +32,7 @@ class App extends Component {
 
 const mapStateToProps = state =>{
   return{
-    smurf: state.smurfs,
+    smurf: state.smurf,
     fetching: state.fetching,
     error: state.error
   }
